@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "file": "01-home.png",
+    "title": "Home",
+    "route": "/home",
+    "purpose": "Discover the community, activities, products and ways to join.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 2,
+    "file": "02-about.png",
+    "title": "About",
+    "route": "/about",
+    "purpose": "Understand the mission, vision and learning philosophy.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 3,
+    "file": "03-events-v2.png",
+    "title": "Events",
+    "route": "/events",
+    "purpose": "Find sessions, filter by topic and distinguish past events.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 4,
+    "file": "04-event-detail.png",
+    "title": "Event detail",
+    "route": "Proposed reusable detail template",
+    "purpose": "Read a completed event recap and continue learning.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 5,
+    "file": "05-products-v2.png",
+    "title": "Products & platforms",
+    "route": "/products",
+    "purpose": "Explore source-listed ventures and community initiatives.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 6,
+    "file": "06-resources.png",
+    "title": "Learning resources",
+    "route": "/resources",
+    "purpose": "Search and filter the verified learning-resource catalogue.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 7,
+    "file": "07-team.png",
+    "title": "Team",
+    "route": "/team",
+    "purpose": "Find current student leads and faculty coordinators.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 8,
+    "file": "08-iot-lab.png",
+    "title": "Mini IoT lab",
+    "route": "/iot-lab",
+    "purpose": "Understand the lab and ask about access.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 9,
+    "file": "09-nanodegree.png",
+    "title": "Nano Degree",
+    "route": "/nanodegree",
+    "purpose": "Explore a proposed learning flow and enquire about availability.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 10,
+    "file": "10-projects.png",
+    "title": "Open-source projects",
+    "route": "/projects",
+    "purpose": "Find project work and understand how to contribute.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 11,
+    "file": "11-recurring-events.png",
+    "title": "Recurring events",
+    "route": "/reccuring-events",
+    "purpose": "Understand repeatable program formats and find sessions.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 12,
+    "file": "12-outreach.png",
+    "title": "Outreach",
+    "route": "/outreach",
+    "purpose": "Explore collaboration with communities beyond campus.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 13,
+    "file": "13-gallery.png",
+    "title": "Gallery",
+    "route": "/gallery",
+    "purpose": "Browse photographic albums and community moments.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 14,
+    "file": "14-news.png",
+    "title": "News",
+    "route": "/news",
+    "purpose": "Read community updates and event recaps.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 15,
+    "file": "15-blog.png",
+    "title": "Blog",
+    "route": "/blog",
+    "purpose": "Browse proposed build notes, tutorials and community stories.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 16,
+    "file": "16-article.png",
+    "title": "Article detail",
+    "route": "Proposed reusable blog/news template",
+    "purpose": "Read comfortably and discover related stories.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 17,
+    "file": "17-inora.png",
+    "title": "Inora",
+    "route": "/inora",
+    "purpose": "Find the radio show, listen and access transcripts.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 18,
+    "file": "18-socials.png",
+    "title": "Socials",
+    "route": "/socials",
+    "purpose": "Choose the right verified community channel.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 19,
+    "file": "19-reports.png",
+    "title": "Reports",
+    "route": "/reports",
+    "purpose": "Find, preview and download published documents.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 20,
+    "file": "20-guidelines.png",
+    "title": "IEDC guidelines",
+    "route": "/iedc-guidelines",
+    "purpose": "Navigate approved guidance in a readable document layout.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 21,
+    "file": "21-contact.png",
+    "title": "Contact",
+    "route": "/contact",
+    "purpose": "Ask a question or discuss an idea, visit or partnership.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 22,
+    "file": "22-join.png",
+    "title": "Join Inovus",
+    "route": "Proposed /join",
+    "purpose": "Send a short interest enquiry and understand next steps.",
+    "group": "Desktop pages"
+  },
+  {
+    "id": 23,
+    "file": "23-mobile-home.png",
+    "title": "Mobile home",
+    "route": "Responsive reference",
+    "purpose": "See the main entry experience at a narrow viewport.",
+    "group": "Mobile"
+  },
+  {
+    "id": 24,
+    "file": "24-mobile-events.png",
+    "title": "Mobile events",
+    "route": "Responsive reference",
+    "purpose": "Search events and scan stacked event cards.",
+    "group": "Mobile"
+  },
+  {
+    "id": 25,
+    "file": "25-mobile-join.png",
+    "title": "Mobile join",
+    "route": "Responsive reference",
+    "purpose": "Complete a short form with comfortable touch targets.",
+    "group": "Mobile"
+  },
+  {
+    "id": 26,
+    "file": "26-design-system.png",
+    "title": "Design system",
+    "route": "Shared visual specification",
+    "purpose": "Reuse color, typography, layout, components and states.",
+    "group": "System & states"
+  },
+  {
+    "id": 27,
+    "file": "27-interaction-states.png",
+    "title": "Interaction states",
+    "route": "Shared visual specification",
+    "purpose": "Menus, lightbox, document preview, validation, success, loading, empty and error states.",
+    "group": "System & states"
+  }
+]

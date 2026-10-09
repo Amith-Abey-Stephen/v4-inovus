@@ -803,3 +803,22 @@ a.polaroid:hover, .polaroid.lift:hover { transform: rotate(0) translateY(-4px); 
 }
 @media (max-width: 760px) { .timeline { grid-template-columns: 1fr !important; } }
 @media (max-width: 900px) { .reading > .rail { display: none; } }
+
+/* ---------- design references drawer ---------- */
+.refs-fab { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 90; display: inline-flex; align-items: center; gap: .5rem; min-height: 48px; padding: .55rem 1.1rem .55rem .85rem; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--sticky); font-family: var(--f-hand); font-size: 1.3rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow-lift); transform: rotate(-2deg); transition: transform .18s var(--ease); }
+.refs-fab:hover { transform: rotate(0) translateY(-2px); }
+.refs-fab svg { width: 24px; }
+.refs-drawer { position: fixed; inset: 0; z-index: 110; background: rgba(22, 20, 15, .55); display: none; justify-content: flex-end; }
+.refs-drawer.open { display: flex; }
+.refs-panel { width: min(560px, 100%); height: 100%; background: var(--paper-sheet); box-shadow: var(--shadow-lift); padding: 1.5rem; display: flex; flex-direction: column; gap: .9rem; }
+.refs-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.refs-head h2 { font-size: 1.7rem; margin-top: .35rem; }
+.refs-close { position: static; flex-shrink: 0; }
+.refs-note { font-size: var(--t-small); color: var(--ink-2); }
+.refs-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.refs-pick select { width: 100%; min-height: 44px; padding: .5rem .75rem; border: 1.5px solid var(--line); border-radius: 8px; background: #fff; font: inherit; font-size: .95rem; }
+.refs-view { flex: 1; min-height: 0; overflow: auto; background: var(--paper-deep); border: 1.5px solid var(--line); border-radius: 6px; }
+.refs-view img { width: 100%; height: auto; }
+.refs-actions { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+@media (max-width: 640px) { .refs-fab span { display: none; } .refs-fab { padding: .55rem; width: 52px; justify-content: center; } .refs-panel { padding: 1rem; } }
+@media print { .refs-fab, .refs-drawer { display: none !important; } }

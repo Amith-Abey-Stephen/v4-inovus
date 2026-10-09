@@ -1,0 +1,72 @@
+{
+  "colors": {
+    "paper": "#F5EEDF",
+    "ink": "#151619",
+    "penBlue": "#284B91",
+    "marker": "#F1C94B",
+    "stamp": "#B92D3A",
+    "success": "#1E7159",
+    "surface": "#FFFAF0",
+    "border": "#817C72"
+  },
+  "typography": {
+    "sans": "Inter",
+    "accent": "Caveat",
+    "scale": [
+      64,
+      48,
+      32,
+      24,
+      18,
+      16
+    ],
+    "bodyLineHeight": 1.6
+  },
+  "spacing": [
+    8,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96
+  ],
+  "layout": {
+    "maxContent": 1280,
+    "breakpoints": {
+      "tablet": 768,
+      "desktop": 1024
+    },
+    "columns": {
+      "mobile": 4,
+      "tablet": 8,
+      "desktop": 12
+    },
+    "margins": {
+      "mobile": 20,
+      "tablet": 32,
+      "desktop": 80
+    }
+  },
+  "components": {
+    "radius": [
+      4,
+      8
+    ],
+    "minControlHeight": 48,
+    "focusRing": "3px solid #284B91",
+    "focusOffset": 3
+  },
+  "motion": {
+    "durationMs": [
+      120,
+      180
+    ],
+    "reducedMotion": "Remove nonessential animation"
+  },
+  "contrastTarget": {
+    "body": 4.5,
+    "largeText": 3,
+    "controls": 3
+  }
+}

@@ -1,0 +1,40 @@
+INOVUS LABS — IMPLEMENTATION NOTES
+27 visual references generated with the built-in Image Generation tool.
+
+REFERENCE LOGIC
+Use paper as the base surface, not a separate card enclosing the whole page.
+Black headings create hierarchy; yellow marks one key phrase; blue annotations add personality; red identifies primary actions.
+Keep handwriting for short accents. Forms, navigation, metadata and body copy should use Inter.
+Use the sketch-to-object transformation for selected hero illustrations. Use official photographs in production.
+
+SOURCE REVIEW — PARTIAL
+1. Home: clear hierarchy and broad content coverage; the large hero delays discovery. Join and some Learn more links expose # destinations. Redesign adds concise paths to joining, events and work.
+2. About: mission, vision and objectives are readable; generic hero CTAs expose # destinations. Redesign makes the story and next steps explicit.
+3. Resources: useful external learning links exist; a large introductory hero and a long catalogue increase browsing effort. Redesign adds search, topic filters and explicit source labels.
+Navigation revealed 19 main-site routes. Some subsequent routes returned blank content in this session. Other designs are proposals grounded in the navigation and verified homepage content. Interactions, backend behavior, mobile behavior and full accessibility were not audited.
+Images are visual references, not a production website or functional prototype.
+
+SCOPE AND CONTENT
+The manifest maps every reference to its route and purpose.
+Event detail, article detail and Join are proposed templates/destinations.
+Current team names and venture names came from the homepage.
+Editorial article titles, podcast episodes, project examples, reports and some program details are explicitly illustrative.
+All generated photography is illustrative, not a record of real events. Use official photos and logos before publication.
+The footer's Privacy, Terms and FAQ are generated conceptual variations. Add only real, approved destinations. Brand Guide and Code of Conduct can use the guidelines reading template if content is supplied.
+External Spotify, social, GitHub and status services remain external; their interfaces are outside this redesign.
+
+IMPLEMENTATION
+Share Header, Footer, StampButton, OutlineButton, TextLink, Field, CheckboxChip, StatusBadge, EventCard, ResourceRow, ProfileCard, DocumentRow, ArticleLayout, Dialog and EmptyState.
+Use the exact colors and spacing in design-tokens.json rather than sampling texture pixels.
+Normalize incidental generated differences in red, heading size, card spacing and footer links.
+Desktop: max 1280px content; 12 columns; 24px gutters.
+Tablet 768–1023px: 8 columns; 2-column card layouts; 32px margins.
+Mobile below 768px: 4 columns; single-column content; 20px margins; full-width primary form actions; accordion navigation.
+Use Inter 800 for headings, Inter 400/500 for text and Caveat for short annotations.
+Use 16–18px body type, 1.5–1.65 line height, roughly 65-character reading columns.
+Keep controls at least 48px tall. Use semantic links and buttons, persistent labels, visible focus, keyboard-operable menus, focus trapping and Escape dismissal for dialogs.
+Show error text with an icon, retain form values after failure, prevent duplicate submission and announce success/loading with live regions.
+Never offer registration for a completed event. Use View recap; upcoming registration needs confirmed event data.
+Use restrained 120–180ms color/opacity transitions. Disable optional movement when reduced motion is requested.
+Validate actual typography, contrast, keyboard flow, screen-reader behavior and responsive layouts after implementation. Raster images do not establish accessibility compliance.
+

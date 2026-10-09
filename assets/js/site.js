@@ -146,7 +146,7 @@
         ${col("Explore", [["projects.html", "Builds"], ["products.html", "Products"], ["iot-lab.html", "IoT Lab"], ["nanodegree.html", "Nanodegrees"], ["resources.html", "Resources"]])}
         ${col("Community", [["team.html", "People"], ["events.html", "Events"], ["outreach.html", "Outreach"], ["guidelines.html", "Guidelines"], ["join.html", "Join"]])}
         ${col("Media", [["gallery.html", "Gallery"], ["blog.html", "Lab Log"], ["inora.html", "InoRa Radio"], ["news.html", "News"], ["reports.html", "Reports"]])}
-        ${col("Reach us", [["mailto:info@inovuslabs.org", "info@inovuslabs.org"], ["tel:+919400057152", "+91 94000 57152"], ["contact.html", "Visit the lab"], ["status.html", "Service status"]])}
+        ${col("Reach us", [["mailto:info@inovuslabs.org", "info@inovuslabs.org"], ["tel:+919400057152", "+91 94000 57152"], ["contact.html", "Visit the lab"], ["status.html", "Service status"], ["inovus-design/index.html", "Design references"]])}
         <div><h4>Follow</h4>
           <div class="socials">
             <a href="https://www.instagram.com/inovuslabs/" target="_blank" rel="noopener" aria-label="Instagram">${social.instagram}</a>
@@ -158,6 +158,113 @@
       </div>
       <div class="footer-bottom"><span>© ${new Date().getFullYear()} Inovus Labs IEDC · Kristu Jyoti College of Management & Technology, Kerala</span><span class="hand" style="font-size:1.2rem">keep building :)</span></div>
     </div>`;
+  }
+
+  /* ---------- design references drawer ---------- */
+  const REF_DIR = "inovus-design/";
+  const REFS = [
+    ["Desktop pages", [
+      ["01-home.png", "Home"], ["02-about.png", "About"], ["03-events-v2.png", "Events"], ["03-events.png", "Events (alt)"],
+      ["04-event-detail.png", "Event detail"], ["05-products-v2.png", "Products"], ["05-products.png", "Products (alt)"],
+      ["06-resources.png", "Resources"], ["07-team.png", "Team"], ["08-iot-lab.png", "Mini IoT lab"], ["09-nanodegree.png", "Nano Degree"],
+      ["10-projects.png", "Projects"], ["11-recurring-events.png", "Recurring events"], ["12-outreach.png", "Outreach"],
+      ["13-gallery.png", "Gallery"], ["14-news.png", "News"], ["15-blog.png", "Blog"], ["16-article.png", "Article detail"],
+      ["17-inora.png", "InoRa"], ["18-socials.png", "Socials"], ["19-reports.png", "Reports"], ["20-guidelines.png", "Guidelines"],
+      ["21-contact.png", "Contact"], ["22-join.png", "Join"],
+    ]],
+    ["Mobile", [["23-mobile-home.png", "Mobile home"], ["24-mobile-events.png", "Mobile events"], ["25-mobile-join.png", "Mobile join"]]],
+    ["System & states", [["26-design-system.png", "Design system"], ["27-interaction-states.png", "Interaction states"]]],
+    ["Current live site", [["source/01-home.png", "Live: Home"], ["source/02-about.png", "Live: About"], ["source/03-resources.png", "Live: Resources"]]],
+  ];
+  const REF_BY_PAGE = {
+    "index.html": ["01-home.png", "23-mobile-home.png", "source/01-home.png"],
+    "about.html": ["02-about.png", "source/02-about.png"],
+    "events.html": ["03-events-v2.png", "03-events.png", "24-mobile-events.png"],
+    "event.html": ["04-event-detail.png"],
+    "products.html": ["05-products-v2.png", "05-products.png"],
+    "resources.html": ["06-resources.png", "source/03-resources.png"],
+    "team.html": ["07-team.png"],
+    "iot-lab.html": ["08-iot-lab.png"],
+    "nanodegree.html": ["09-nanodegree.png"],
+    "nanodegree-iot-arduino.html": ["09-nanodegree.png"],
+    "projects.html": ["10-projects.png"],
+    "project.html": ["10-projects.png"],
+    "recurring-events.html": ["11-recurring-events.png"],
+    "outreach.html": ["12-outreach.png"],
+    "gallery.html": ["13-gallery.png"],
+    "news.html": ["14-news.png"],
+    "blog.html": ["15-blog.png"],
+    "blog-directory.html": ["15-blog.png"],
+    "blog-post.html": ["16-article.png"],
+    "inora.html": ["17-inora.png"],
+    "socials.html": ["18-socials.png"],
+    "reports.html": ["19-reports.png"],
+    "guidelines.html": ["20-guidelines.png"],
+    "contact.html": ["21-contact.png"],
+    "join.html": ["22-join.png", "25-mobile-join.png"],
+  };
+
+  function designRefs() {
+    const all = REFS.flatMap(([, list]) => list);
+    const title = f => (all.find(r => r[0] === f) || [f, f])[1];
+    const mine = [...(REF_BY_PAGE[here] || []), "26-design-system.png", "27-interaction-states.png"];
+
+    const fab = document.createElement("button");
+    fab.className = "refs-fab";
+    fab.setAttribute("aria-haspopup", "dialog");
+    fab.innerHTML = `${icons.book}<span>Design refs</span>`;
+
+    const d = document.createElement("aside");
+    d.className = "refs-drawer";
+    d.setAttribute("role", "dialog");
+    d.setAttribute("aria-modal", "true");
+    d.setAttribute("aria-labelledby", "refs-title");
+    d.innerHTML = `<div class="refs-panel">
+      <div class="refs-head">
+        <div><span class="eyebrow">Other designs</span><h2 id="refs-title">Design references</h2></div>
+        <button class="lb-btn refs-close" aria-label="Close design references">${icons.close}</button>
+      </div>
+      <p class="refs-note">For reference only. These are AI-generated mockups from the alternate design set, not the live site.</p>
+      <div class="refs-chips" role="group" aria-label="References for this page">
+        ${mine.map((f, i) => `<button class="chip" data-ref="${f}" aria-pressed="${!i}">${esc(title(f))}</button>`).join("")}
+      </div>
+      <label class="refs-pick"><span class="sr-only">Jump to any reference</span>
+        <select>
+          <option value="">Jump to any design…</option>
+          ${REFS.map(([g, list]) => `<optgroup label="${g}">${list.map(([f, t]) => `<option value="${f}">${esc(t)}</option>`).join("")}</optgroup>`).join("")}
+        </select>
+      </label>
+      <div class="refs-view" tabindex="0" aria-label="Reference preview, scroll to see more"><img alt=""></div>
+      <div class="refs-actions">
+        <a class="link refs-full" target="_blank" rel="noopener">Open full size ↗</a>
+        <a class="btn btn-ink btn-sm" href="${REF_DIR}index.html" target="_blank" rel="noopener">Browse all designs <span class="arr">→</span></a>
+      </div>
+    </div>`;
+    document.body.append(fab, d);
+
+    const view = $(".refs-view", d), pic = $("img", view), full = $(".refs-full", d), sel = $("select", d);
+    const show = f => {
+      pic.src = REF_DIR + f; pic.alt = `${title(f)} design reference`;
+      full.href = REF_DIR + f; view.scrollTop = 0;
+      $$(".refs-chips .chip", d).forEach(c => c.setAttribute("aria-pressed", c.dataset.ref === f));
+    };
+    let opener;
+    const open = () => { opener = document.activeElement; if (!pic.getAttribute("src")) show(mine[0]); d.classList.add("open"); document.body.style.overflow = "hidden"; $(".refs-close", d).focus(); };
+    const close = () => { d.classList.remove("open"); document.body.style.overflow = ""; opener && opener.focus(); };
+    fab.addEventListener("click", open);
+    $(".refs-close", d).addEventListener("click", close);
+    d.addEventListener("click", e => { if (e.target === d) close(); });
+    $(".refs-chips", d).addEventListener("click", e => { const c = e.target.closest("[data-ref]"); if (c) show(c.dataset.ref); });
+    sel.addEventListener("change", () => { if (sel.value) { show(sel.value); sel.value = ""; } });
+    document.addEventListener("keydown", e => {
+      if (!d.classList.contains("open")) return;
+      if (e.key === "Escape") close();
+      if (e.key === "Tab") {
+        const f = $$("button, select, a[href], [tabindex='0']", d);
+        const i = f.indexOf(document.activeElement);
+        if (e.shiftKey ? i <= 0 : i === f.length - 1) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); }
+      }
+    });
   }
 
   /* ---------- reveal on scroll ---------- */
@@ -379,7 +486,7 @@
 
   window.INO_UI = { $, $$, esc, src, fmt, img, initials, buildCard, eventCard, personCard, statusBadge, icons, reveal };
 
-  header(); footer();
+  header(); footer(); designRefs();
   ({ home, projects, events, team, gallery, products, contact }[document.body.dataset.page] || (() => {}))();
   reveal();
 })();

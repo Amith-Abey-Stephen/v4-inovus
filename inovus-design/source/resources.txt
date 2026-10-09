@@ -1,0 +1,276 @@
+Window: "Resources & Inventory - Inovus Labs IEDC", App: Brave Browser.
+0 standard window Resources & Inventory - Inovus Labs IEDC - Brave - Personal, URL: inovuslabs.org/resources, Secondary Actions: Raise
+	1 container Resources & Inventory - Inovus Labs IEDC - Brave - Personal, URL: inovuslabs.org/resources
+		2 container
+			3 toolbar
+				4 button Back
+				5 button (disabled) Forward
+				6 button Reload
+				7 button Bookmark this tab
+				8 container
+					9 pop up button View site information
+					10 text field (settable) Address and search bar, Value: inovuslabs.org/resources, Placeholder: Search Brave or type a URL
+					11 button Install Inovus Labs IEDC
+					12 splitter Separator
+					13 pop up button Brave Shields
+					14 pop up button Brave Rewards
+				15 pop up button Extensions
+				16 button Show Sidebar
+				17 pop up button Brave Wallet
+				18 button Leo AI
+				19 pop up button VPN
+				20 button Personal
+				21 pop up button Brave
+			22 toolbar Bookmarks
+				23 toolbar Saved Tab Groups
+					24 saved tab group button  refernce group - Opened
+					25 saved tab group button  todo group - Closed
+					26 saved tab group button  blog group - Closed
+					27 saved tab group button  profile.inovus group - Closed
+					28 saved tab group button  readmes group - Closed
+					29 saved tab group button  profile.inovus group - Closed
+					30 saved tab group button  ts group - Closed
+					31 saved tab group button  astro group - Opened
+					32 saved tab group button  others group - Closed
+					33 saved tab group button  new blog group - Opened
+					34 button Tab groups
+				35 splitter Separator
+				36 bookmark folder button FinalApps
+				37 bookmark folder button All Bookmarks
+				38 splitter Separator
+			39 container
+				40 scroll area
+					41 HTML content Resources & Inventory - Inovus Labs IEDC, URL: inovuslabs.org/resources
+						42 container
+							43 link Skip to main content, Value: inovuslabs.org/resources#main-content
+							44 link Inovus Labs Logo, Value: inovuslabs.org/
+							45 content list
+								46 link Home, Value: inovuslabs.org/
+								47 button About
+								48 button Initiatives
+								49 link Products, Value: inovuslabs.org/products
+								50 link Resources, Value: inovuslabs.org/resources
+								51 link Contact, Value: inovuslabs.org/contact
+							52 link Join Inovus Labs, Value: inovuslabs.org/resources#
+							53 container
+								54 heading Knowledge Nexus: Learning Resources Await You!, Value: 1
+									55 text Knowledge Nexus: Learning Resources Await You!
+								56 text Your Gateway to Varied Knowledge - Dive into Curated Learning Resources Spanning Different Tech Stacks for a Holistic Learning Experience.
+								57 link Start learning now, Value: inovuslabs.org/resources#masonary-container
+								58 image Resources
+							59 container
+								60 heading Unlock a treasure trove of knowledge!, Value: 1
+									61 text Unlock a treasure trove of knowledge!
+								62 text Dive into the Learning Resources section, where we share a curated collection of educational gems across different stacks. Elevate your skills across a spectrum of disciplines with our handpicked resources.
+								63 container
+									64 text Blockchain
+									65 heading Learn to Code Blockchain DApps by Building Simple Games, Value: 5
+										66 text Learn to Code Blockchain DApps by Building Simple Games
+									67 text CryptoZombies is an interactive school that teaches you all things technical about blockchains. Learn to write smart contracts by making your own crypto-collectibles game.
+									68 link Website, Value: cryptozombies.io/
+									69 text Posted 2 years ago
+								70 container
+									71 text Web Development System Design
+									72 heading What are Microservices?, Value: 5
+										73 text What are Microservices?
+									74 text Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities.
+									75 link Website, Value: microservices.io/
+									76 text Posted 2 years ago
+								77 container
+									78 text Web Development TypeScript
+									79 heading The Concise TypeScript Book, Value: 5
+										80 text The Concise TypeScript Book
+									81 text A Concise Guide to Effective Development in TypeScript. Free and Open Source
+									82 link GitHub, Value: github.com/gibbok/typescript-book
+									83 text Posted 3 years ago
+								84 container
+									85 text General
+									86 heading Computer Science, Value: 5
+										87 text Computer Science
+									88 text Path to a free self-taught education in Computer Science!
+									89 link GitHub, Value: github.com/ossu/computer-science#advanced-programming
+									90 text Posted 3 years ago
+								91 container
+									92 text General System Design
+									93 heading System Design Primer, Value: 5
+										94 text System Design Primer
+									95 text Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards
+									96 link GitHub, Value: github.com/donnemartin/system-design-primer
+									97 text Posted 3 years ago
+								98 container
+									99 text General System Design
+									100 heading System Design, Value: 5
+										101 text System Design
+									102 text Learn how to design systems at large-scale and prepare for system design interviews
+									103 link Website, Value: karanpratapsingh.com/courses/system-design
+									104 text Posted 4 years ago
+								105 container
+									106 text General
+									107 heading ByteByteGo, Value: 5
+										108 text ByteByteGo
+									109 text Covering topics and trends in large-scale system design, from the authors of the best-selling System Design Interview book series
+									110 link YouTube, Value: youtube.com/c/ByteByteGo
+									111 text Posted 4 years ago
+								112 container
+									113 text General
+									114 heading How the Web Works, Value: 5
+										115 text How the Web Works
+									116 text What happens behind the scenes when we type www.google.com in a browser?
+									117 link GitHub, Value: github.com/vasanthk/how-web-works
+									118 text Posted 4 years ago
+								119 container
+									120 text General
+									121 heading CodeCrafters, Value: 5
+										122 text CodeCrafters
+									123 text Have you heard about 'Code Crafters'. They do have an awesome GitHub Organization page with some really awesome learning resource repositories. If interested, do check them out.
+									124 link GitHub, Value: github.com/codecrafters-io
+									125 link Website, Value: codecrafters.io/
+									126 text Posted 4 years ago
+								127 container
+									128 text DevOps
+									129 heading DevOps Resources, Value: 5
+										130 text DevOps Resources
+									131 text DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP
+									132 link GitHub, Value: github.com/bregman-arie/devops-resources
+									133 text Posted 4 years ago
+								134 container
+									135 text Web Development JavaScript
+									136 heading The Modern JavaScript Tutorial, Value: 5
+										137 text The Modern JavaScript Tutorial
+									138 text From the basics to advanced topics with simple, but detailed explanations.
+									139 link Website, Value: javascript.info/
+									140 text Posted 4 years ago
+								141 container
+									142 text Web Development JavaScript
+									143 heading Modular JavaScript Book Series, Value: 5
+										144 text Modular JavaScript Book Series
+									145 text Modular JavaScript is an open effort to improve our collective understanding of writing robust, well-tested & modular applications. It consists of five books, each of which explores a key aspect of JavaScript development — comprehensively. The books are produced in the open: anyone can track their progress, report issues & contribute fixes or content.
+									146 link Website, Value: mjavascript.com/
+									147 text Posted 4 years ago
+								148 container
+									149 text Web Development Node.js
+									150 heading Node.js - Notes for Professionals, Value: 5
+										151 text Node.js - Notes for Professionals
+									152 text This is an unofficial free book created for educational purposes and is not affiliated with official Node.js group(s) or company(s)
+									153 link PDF, Value: github.com/milan-sony/hacktoberfest2023/files/13665968/NodeJSNotesForProfessionals.pdf
+									154 text Posted 4 years ago
+								155 container
+									156 text Web Development React Node.js
+									157 heading Deep Dive Into Modern Web Development, Value: 5
+										158 text Deep Dive Into Modern Web Development
+									159 text Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
+									160 link Website, Value: fullstackopen.com/en/
+									161 text Posted 5 years ago
+								162 container
+									163 text General
+									164 heading roadmap.sh, Value: 5
+										165 text roadmap.sh
+									166 text roadmap.sh is a community effort to create road-maps, guides and other educational content to help guide the developers in picking up the path and guide their learnings
+									167 link Website, Value: roadmap.sh/
+									168 link YouTube, Value: youtube.com/theroadmap
+									169 text Posted 5 years ago
+								170 container
+									171 text AI/ML
+									172 heading Machine Learning Crash Course with TensorFlow, Value: 5
+										173 text Machine Learning Crash Course with TensorFlow
+									174 text Google's free, fast-paced, practical introduction to Machine Learning
+									175 link Website, Value: developers.google.com/machine-learning/crash-course
+									176 text Posted 5 years ago
+								177 container
+									178 text IoT
+									179 heading IoT for Beginners - A Curriculum from Microsoft, Value: 5
+										180 text IoT for Beginners - A Curriculum from Microsoft
+									181 text 2 weeks, 24 lessons, IoT for all
+									182 link GitHub, Value: github.com/microsoft/IoT-For-Beginners
+									183 text Posted 5 years ago
+								184 container
+									185 text AI/ML
+									186 heading Artificial Intelligence Curriculum, Value: 5
+										187 text Artificial Intelligence Curriculum
+									188 text Curated with support from Intel®️ (CBSE Class 10 - Facilitator Handbook)
+									189 link PDF, Value: cbseacademic.nic.in/web_material/Curriculum21/publication/secondary/Class10_Facilitator_Handbook.pdf
+									190 text Posted 5 years ago
+								191 container
+									192 text AI/ML
+									193 heading Machine Learning for Beginners - A Curriculum, Value: 5
+										194 text Machine Learning for Beginners - A Curriculum
+									195 text 12 weeks, 24 lessons, Classic Machine Learning for all
+									196 link GitHub, Value: github.com/microsoft/ML-For-Beginners
+									197 text Posted 5 years ago
+								198 container
+									199 text AI/ML
+									200 heading ഒരു സമ്പൂർണ മലയാള മെഷീൻ ലേർണിംഗ് ഗൈഡ്, Value: 5
+										201 text ഒരു സമ്പൂർണ മലയാള മെഷീൻ ലേർണിംഗ് ഗൈഡ്
+									202 text Machine Learning Guide (For Absolute Beginners) by Sreeram Venkitesh
+									203 link GitHub, Value: github.com/sreeram-venkitesh/Essence-of-ML
+									204 text Posted 5 years ago
+								205 container
+									206 text Linux DevOps
+									207 heading Learn Linux Basics – Bash Command Tutorial for Beginners, Value: 5
+										208 text Learn Linux Basics – Bash Command Tutorial for Beginners
+									209 text The Linux Command Handbook by FreeCodeCamp
+									210 link Website, Value: freecodecamp.org/news/the-linux-commands-handbook/
+									211 text Posted 5 years ago
+							212 link Inovus Labs Logo, Value: inovuslabs.org/
+							213 heading RESOURCES, Value: 2
+								214 text RESOURCES
+							215 content list
+								216 link Our Products, Value: inovuslabs.org/products
+								217 text Certificates
+								218 link Status Page, Value: status.inovuslabs.org/
+							219 heading FOLLOW US, Value: 2
+								220 text FOLLOW US
+							221 content list
+								222 link Inovus Blogs, Value: blog.inovuslabs.org/
+								223 link Inovus Radio, Value: open.spotify.com/show/4QXEeK8ZWxewcXuLKCRR8R
+								224 text Inovus Profiles
+							225 heading GUIDELINES, Value: 2
+								226 text GUIDELINES
+							227 content list
+								228 text Brand Guide
+								229 text Code of Conduct
+								230 link IEDC Guidelines, Value: inovuslabs.org/iedc-guidelines
+							231 splitter
+							232 text © 2026 
+							233 link Inovus Labs, Value: inovuslabs.org/
+							234 text . All Rights Reserved.
+							235 link Join Inovus Labs WhatsApp Channel, Value: whatsapp.com/channel/0029VaC8Xz27oQhXmjqNUV3T
+							236 link Visit Inovus Labs on Instagram, Value: instagram.com/inovuslabs/
+							237 link Visit Inovus Labs on Threads, Value: threads.net/@inovuslabs
+							238 link Visit Inovus Labs on LinkedIn, Value: linkedin.com/company/inovus-labs-iedc/
+							239 link Visit Inovus Labs on Twitter, Value: twitter.com/inovuslabs
+							240 link Visit Inovus Labs on GitHub, Value: github.com/inovus-labs
+							241 link Visit Inovus Labs on YouTube, Value: youtube.com/@inovuslabs_official
+			242 pop up button Tab search
+			243 container
+				244 tab group
+					245 tab group  group new blog - 4 Tabs, •  Configure Docker PostgreSQL, •  Refine PostgreSQL Blog, •  Branch · Branch · Configure Docker PostgreSQL, •  Ghost - Collapsed
+					246 tab group  group astro - 4 Tabs, •  Getting started | Docs, •  AI Knowledge Hub | Mike Murphy, •  How To Build Your First Website With Astro | M…, •  Astro: How to Build Your First Website - YouTu… - Collapsed
+					247 tab group  group refernce - 8 Tabs, •  Best Portfolio Websites | Web Design Inspirati…, •  Kott Studio — Web Design, Development & Brandi…, •  Kyne JANG — Web Designer, •  Pilea - Agence de montage vidéo, •  Tanweer AI, + 3 More - Collapsed
+					248 tab (settable, boolean) (153) WhatsApp - Memory usage - 456 MB, Value: off
+					249 tab (settable, boolean) RAVE — Where Creators Collaborate - Memory usage - 41.8 MB, Value: off
+					250 tab (settable, boolean) Frelo for Freelancers - Memory usage - 56.9 MB, Value: off
+					251 tab (selected, settable, boolean) Resources & Inventory - Inovus Labs IEDC, Value: on
+						252 button Close
+					253 tab (settable, boolean) tryflowsend.com/lander, Value: off
+					254 tab (settable, boolean) h1b visa - Brave Search, Value: off
+					255 tab (settable, boolean) Inovus Labs IEDC · Sparking tomorrow’s innovations, Value: off
+			256 button New Tab
+			257 container
+				258 splitter
+	259 close button
+	260 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	261 minimize button
+262 menu bar
+	263 Brave
+	264 File
+	265 Edit
+	266 View
+	267 History
+	268 Bookmarks
+	269 Profiles
+	270 Tab
+	271 Window
+	272 Help
+
+The focused UI element is 41 HTML content Resources & Inventory - Inovus Labs IEDC, URL: inovuslabs.org/resources
