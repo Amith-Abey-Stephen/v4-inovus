@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery · Inovus Labs IEDC</title>
+  <meta name="description" content="Photos from workshops, hackathons and lab days at Inovus Labs.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="gallery">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2rem">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div>
+          <span class="eyebrow">From the lab, with love</span>
+          <h1>Small moments. <span class="mark">Big memories.</span></h1>
+        </div>
+        <p class="hand hand-lg hide-md" style="transform:rotate(-6deg)">click any photo ↓</p>
+      </div>
+    </section>
+    <section class="sheet section-tight">
+      <div class="wrap">
+        <div id="years" style="display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:2.2rem" role="group" aria-label="Album"></div>
+        <div class="masonry" id="masonry"></div>
+        <div class="more-row"><button class="btn btn-ink" id="more">Load more</button></div>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <figure><img alt=""><figcaption><b></b><time class="muted"></time></figcaption></figure>
+      <button class="lb-btn lb-prev" aria-label="Previous photo"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M30 10L16 24l14 14"/></svg></button>
+      <button class="lb-btn lb-next" aria-label="Next photo"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M18 10l14 14-14 14"/></svg></button>
+      <button class="lb-btn lb-close" aria-label="Close"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 12l24 24M36 12L12 36"/></svg></button>
+    </div>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

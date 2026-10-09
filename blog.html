@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab Log · Inovus Labs IEDC</title>
+  <meta name="description" content="Notes from the workbench: student stories and tutorials from the Inovus Labs blog.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="blog">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2.5rem">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div>
+          <span class="eyebrow">The Lab Log</span>
+          <h1>Notes from the <span class="mark">workbench.</span></h1>
+        </div>
+        <a class="btn btn-stamp" href="https://blog.inovuslabs.org" target="_blank" rel="noopener">Read the Lab Log ↗</a>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap" style="display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:start" id="blog-top">
+        <div id="feature"></div>
+        <div id="side" style="display:grid;gap:2.2rem"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Recent stories</span><h2>Fresh off the bench.</h2></div><a class="link" href="https://blog.inovuslabs.org" target="_blank" rel="noopener">All stories ↗</a></div>
+        <div class="grid g-3" id="recent"></div>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap split" style="align-items:start">
+        <div><span class="eyebrow">Topics</span><h2 class="mt-4" style="margin-bottom:1.5rem">Follow a curiosity.</h2><div id="topics" style="display:flex;flex-wrap:wrap;gap:.5rem"></div></div>
+        <div><span class="eyebrow">Recent authors</span><ul class="mentor-list mt-6" id="authors" style="grid-template-columns:1fr 1fr"></ul>
+          <a class="link mt-4" href="blog-directory.html">All authors →</a>
+          <p class="hand hand-md mt-6" style="transform:rotate(-2deg)">got something to say? <a href="contact.html?topic=General" style="color:inherit">write for us →</a></p></div>
+      </div>
+    </section>
+    <style>@media (max-width: 860px) { #blog-top { grid-template-columns: 1fr !important; } }</style>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

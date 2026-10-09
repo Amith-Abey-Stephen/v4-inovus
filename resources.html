@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Resources · Inovus Labs IEDC</title>
+  <meta name="description" content="Hand-picked free resources for web, AI/ML, IoT, DevOps and system design.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="resources">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div>
+          <span class="eyebrow">Hand-picked by the community</span>
+          <h1>Your next rabbit hole starts <span class="mark">here.</span></h1>
+        </div>
+        <div class="sticky hide-md" style="--r:3deg;max-width:250px"><p class="hand hand-md" style="color:var(--ink)">new here? start with roadmap.sh ↓</p></div>
+      </div>
+    </section>
+    <div class="toolbar">
+      <div class="wrap">
+        <label class="search"><span class="sr-only">Search resources</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="M31 31l11 11"/></svg><input id="q" type="search" placeholder="Search resources…"></label>
+        <div id="rcats" style="display:flex;gap:.4rem;flex-wrap:wrap" role="group" aria-label="Topic"></div>
+        <span class="result-count" id="count" aria-live="polite"></span>
+      </div>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        <ul class="ledger" id="res"></ul>
+        <div class="empty" id="empty" hidden><div class="sticky"><span class="card-title">Nothing found</span><p class="mt-2">Try a broader word.</p><button class="btn btn-ink btn-sm mt-4" id="reset">Clear filters</button></div></div>
+        <p class="hand hand-md mt-7">know a great resource? <a href="contact.html?topic=Learning" style="color:inherit">suggest it →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

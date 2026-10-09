@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events · Inovus Labs IEDC</title>
+  <meta name="description" content="Workshops, hackathons, bootcamps and meetups by Inovus Labs since 2018.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="events">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Workshops · hackathons · meetups</span>
+          <h1>Find your next <span class="mark">experiment.</span></h1>
+          <div class="hero-actions">
+            <div class="tabs" role="tablist" aria-label="Event timing">
+              <button class="chip" role="tab" data-tab="upcoming" aria-selected="false">Upcoming</button>
+              <button class="chip" role="tab" data-tab="past" aria-selected="true">Past</button>
+            </div>
+          </div>
+        </div>
+        <div class="sticky tape t-yellow" style="--r:2deg;max-width:340px;justify-self:center">
+          <span class="card-title">100+ sessions</span>
+          <p class="hand hand-md mt-2" style="color:var(--ink)">since 2018 and counting.</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="upcoming" hidden>
+      <section class="section">
+        <div class="wrap empty">
+          <div class="index-card" style="display:inline-block;max-width:420px;text-align:left">
+            <span class="card-title">Nothing announced yet</span>
+            <p class="mt-4">New sessions are posted on our channels first.</p>
+            <div class="hero-actions" style="margin-top:1.2rem">
+              <a class="btn btn-ink btn-sm" href="https://www.whatsapp.com/channel/0029VaC8Xz27oQhXmjqNUV3T" target="_blank" rel="noopener">WhatsApp channel ↗</a>
+              <a class="link" href="https://www.instagram.com/inovuslabs/" target="_blank" rel="noopener">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="past">
+      <div class="toolbar">
+        <div class="wrap">
+          <label class="search"><span class="sr-only">Search events</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="M31 31l11 11"/></svg><input id="q" type="search" placeholder="Search events…"></label>
+          <label><span class="sr-only">Year</span><select class="select" id="year"></select></label>
+          <span class="result-count" id="count" aria-live="polite"></span>
+        </div>
+      </div>
+      <section class="section">
+        <div class="wrap">
+          <div class="grid g-3" id="events"></div>
+          <div class="empty" id="empty" hidden>
+            <div class="sticky"><span class="card-title">No events found</span><p class="mt-2">Try another word or year.</p><button class="btn btn-ink btn-sm mt-4" id="reset">Reset filters</button></div>
+          </div>
+          <div class="more-row"><button class="btn btn-ink" id="more">Load more</button></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

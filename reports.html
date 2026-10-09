@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports · Inovus Labs IEDC</title>
+  <meta name="description" content="Inovus Labs IEDC activity and monthly reports, 2018 onwards.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="reports">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Activity records</span>
+          <h1>Our work, on <span class="mark">record.</span></h1>
+          <p class="lede">Yearly activity reports and monthly records, kept in the open.</p>
+        </div>
+        <div class="doc-cover tape t-yellow" style="justify-self:center">
+          <b>IEDC Monthly Report</b>
+          <div><span>Jan 2018 – Dec 2019</span><br><a class="btn btn-ink btn-sm mt-4" href="https://docs.google.com/document/d/1JDD5wN1zIb5QgYzHNhDSqWCz11MCvREe" target="_blank" rel="noopener">Open document ↗</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">The archive</span><h2>All reports.</h2></div>
+          <div id="rtype" role="group" aria-label="Report type" style="display:flex;gap:.4rem">
+            <button class="chip" aria-pressed="true" data-f="All">All</button>
+            <button class="chip" aria-pressed="false" data-f="Activity">Activity</button>
+            <button class="chip" aria-pressed="false" data-f="Monthly">Monthly</button>
+          </div>
+        </div>
+        <ul class="ledger" id="reports"></ul>
+        <div class="notice mt-6"><span>✎</span><span>Some entries share one file on our current site, so we’ve marked them <b>Link under review</b> rather than send you to the wrong report.</span></div>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="wrap cta"><h2>Need a specific record?</h2><a class="btn btn-stamp" href="contact.html?topic=General">Request a report <span class="arr">→</span></a></div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

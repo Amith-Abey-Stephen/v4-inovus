@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab Log · Inovus Labs IEDC</title>
+  <meta name="description" content="A story from the Inovus Labs Lab Log.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="post">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2.5rem">
+      <div class="wrap" style="grid-template-columns:1fr">
+        <div class="article-head" style="width:100%;max-width:680px">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="blog.html">Lab Log</a><span>/</span><a href="blog-directory.html">Authors &amp; topics</a></nav>
+          <div id="tag" class="mt-6" style="display:flex;gap:.4rem;flex-wrap:wrap"></div>
+          <h1 id="title"></h1>
+          <div class="byline" id="byline"></div>
+        </div>
+      </div>
+    </section>
+    <section class="sheet section" style="padding-top:3rem">
+      <div class="wrap">
+        <figure class="article-cover polaroid tape" id="cover" style="--r:-.4deg;margin:0 auto 3.5rem"></figure>
+        <article class="article" id="body"></article>
+        <div class="author-card index-card" id="author-card" style="--r:-.5deg"></div>
+        <div style="max-width:680px;margin:2rem auto 0;display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;justify-content:space-between">
+          <a class="btn btn-ink btn-sm" id="original" href="https://blog.inovuslabs.org" target="_blank" rel="noopener">Read on blog.inovuslabs.org ↗</a>
+          <a class="btn btn-stamp btn-sm" href="https://blog.inovuslabs.org/#/portal/signup" target="_blank" rel="noopener">Subscribe ↗</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Keep reading</span><h2>More from the bench.</h2></div><a class="link" href="blog.html">← Lab Log</a></div>
+        <div class="grid g-3" id="more-posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

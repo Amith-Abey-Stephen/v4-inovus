@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Socials · Inovus Labs IEDC</title>
+  <meta name="description" content="Official Inovus Labs channels: Instagram, LinkedIn, YouTube, Threads, X, GitHub and WhatsApp.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="socials">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div>
+          <span class="eyebrow">Official channels only</span>
+          <h1>Stay in the <span class="mark">loop.</span></h1>
+          <p class="lede">New events, builds and stories land here first.</p>
+        </div>
+        <div class="sticky hide-md" style="--r:3deg;max-width:260px"><p class="hand hand-md" style="color:var(--ink)">psst, the WhatsApp channel is the fastest ✌</p></div>
+      </div>
+    </section>
+    <section class="sheet section-tight">
+      <div class="wrap">
+        <div class="channels" id="channels"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Recent highlights</span><h2>From the feed.</h2></div></div>
+        <div class="notice" style="margin-bottom:2.5rem"><span>🔒</span><span>Previews load from each platform only when you click <b>Load preview</b>, so nothing tracks you until you choose.</span></div>
+        <div id="feed"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

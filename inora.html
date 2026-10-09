@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InoRa Radio · Inovus Labs IEDC</title>
+  <meta name="description" content="InoRa Radio, the Inovus Labs podcast: conversations about building, learning and starting up.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="inora">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">The Inovus podcast</span>
+          <h1>Ideas worth <span class="mark">listening</span> to.</h1>
+          <p class="lede">Conversations with builders, founders and curious people.</p>
+          <div class="hero-actions"><a class="btn btn-stamp" href="https://open.spotify.com/show/4QXEeK8ZWxewcXuLKCRR8R" target="_blank" rel="noopener">Listen on Spotify ↗</a></div>
+        </div>
+        <div style="position:relative;justify-self:center;width:min(100%,340px)">
+          <div class="sticky tape t-pink" style="--r:-3deg;text-align:center;padding:2.4rem 1.5rem">
+            <span data-icon="mega" style="width:96px;color:var(--ink)"></span>
+            <p class="card-title mt-4">InoRa Radio</p>
+            <p class="hand hand-md" style="color:var(--ink)">on air, on demand</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap split" style="align-items:start">
+        <div id="show"></div>
+        <div>
+          <div class="section-head" style="margin-bottom:1rem"><div><span class="eyebrow">Episodes</span><h2 style="font-size:1.9rem;margin-top:.5rem">Pick one.</h2></div></div>
+          <div id="episodes"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="split" style="margin-bottom:3rem">
+          <div><span class="eyebrow">Why we talk</span><h2 class="mt-4">Every build has a <span class="mark">story.</span></h2></div>
+          <p class="lede">InoRa shares the stories behind the projects: the wrong turns, the people and the lessons.</p>
+        </div>
+        <div class="section-head"><div><span class="eyebrow">Behind the mic</span><h2>The crew.</h2></div></div>
+        <div class="grid g-4 people" id="crew"></div>
+      </div>
+    </section>
+    <section class="sheet sheet-yellow">
+      <div class="wrap cta"><h2>Know a story we should tell?</h2><a class="btn btn-stamp" href="contact.html?topic=General">Suggest a conversation <span class="arr">→</span></a></div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

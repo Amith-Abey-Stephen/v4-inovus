@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products · Inovus Labs IEDC</title>
+  <meta name="description" content="Tools built at Inovus Labs: Nodrix, SyncBatch, DocGen and more.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="products">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div>
+          <span class="eyebrow">Made in the lab, shipped to the world</span>
+          <h1>Built here. Useful <span class="mark">everywhere.</span></h1>
+          <p class="lede">Small, focused products our students designed, built and still run.</p>
+        </div>
+        <div class="sticky hide-md" style="--r:3deg;max-width:240px"><p class="hand hand-md" style="color:var(--ink)">open-source<br>first, always.</p></div>
+      </div>
+    </section>
+    <section class="sheet section-tight">
+      <div class="wrap" id="products"></div>
+    </section>
+    <section class="section-tight">
+      <div class="wrap cta">
+        <h2>Want to build the next one?</h2>
+        <div style="display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center">
+          <a class="btn btn-stamp" href="join.html">Join Inovus <span class="arr">→</span></a>
+          <a class="link" href="projects.html">See all builds →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

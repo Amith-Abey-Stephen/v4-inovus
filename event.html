@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event · Inovus Labs IEDC</title>
+  <meta name="description" content="Event details from Inovus Labs IEDC.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="event">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2rem">
+      <div class="wrap" style="grid-template-columns:1fr">
+        <div>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="events.html">Events</a><span>/</span><span id="crumb"></span></nav>
+          <h1 id="title" style="font-size:clamp(2rem,4.4vw,3.6rem);max-width:22ch"></h1>
+          <p class="hand hand-lg mt-4" id="when"></p>
+        </div>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(2rem,5vw,4rem);align-items:start" id="ev-grid">
+        <div>
+          <figure class="polaroid tape" id="poster" style="--r:-.6deg;margin:0 0 2.5rem;max-width:680px"></figure>
+          <span class="eyebrow">What happened</span>
+          <div class="prose mt-4" id="desc"></div>
+        </div>
+        <dl class="meta-rail" id="meta" style="margin:0"></dl>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Related</span><h2>More like this.</h2></div><a class="link" href="events.html">← All events</a></div>
+        <div class="grid g-3" id="related"></div>
+      </div>
+    </section>
+    <style>@media (max-width: 860px) { #ev-grid { grid-template-columns: 1fr !important; } #ev-grid .meta-rail { order: -1; } }</style>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

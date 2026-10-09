@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Inovus Labs IEDC</title>
+  <meta name="description" content="Get in touch with Inovus Labs IEDC at KJCMT, Changanassery, Kerala.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2rem">
+      <div class="wrap" style="grid-template-columns:1fr">
+        <div>
+          <span class="eyebrow">Write to us</span>
+          <h1>Let’s make something <span class="mark">happen.</span></h1>
+        </div>
+      </div>
+    </section>
+    <section class="section-tight" style="padding-top:1rem">
+      <div class="wrap" style="display:grid;grid-template-columns:1.4fr .8fr;gap:clamp(2rem,5vw,4.5rem);align-items:start" id="contact-grid">
+        <form class="letter tape t-yellow" id="enquiry" novalidate>
+          <p class="hand hand-md" style="margin-bottom:.8rem">What’s this about?</p>
+          <div class="purpose" role="group" aria-label="Enquiry purpose">
+            <button type="button" class="chip" aria-pressed="false">General</button>
+            <button type="button" class="chip" aria-pressed="false">Lab visit</button>
+            <button type="button" class="chip" aria-pressed="false">Learning</button>
+            <button type="button" class="chip" aria-pressed="false">Startup</button>
+            <button type="button" class="chip" aria-pressed="false">Mentoring</button>
+            <button type="button" class="chip" aria-pressed="false">Partnership</button>
+          </div>
+          <input type="hidden" name="subject" value="General">
+          <div class="grid g-2" style="gap:0 1.5rem">
+            <div class="field"><label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name"></span></div>
+            <div class="field"><label for="f-email">Email <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required aria-describedby="e-email"><span class="err" id="e-email"></span></div>
+          </div>
+          <div class="field"><label for="f-msg">Message <span class="req" aria-hidden="true">*</span></label><textarea id="f-msg" name="message" required aria-describedby="e-msg"></textarea><span class="err" id="e-msg"></span></div>
+          <button class="btn btn-stamp" type="submit">Send enquiry <span class="arr">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">This opens your email app with the message ready. We only use your details to reply.</p>
+        </form>
+
+        <aside style="display:grid;gap:2rem">
+          <div class="sticky" style="--r:2deg">
+            <span class="card-title">Find the lab</span>
+            <p class="mt-2">Kristu Jyoti College of Management &amp; Technology<br>Chethipuzha P.O, Changanassery<br>Kottayam, Kerala 686104</p>
+            <a class="link mt-2" style="color:var(--ink)" href="https://www.google.com/maps/search/?api=1&query=Kristu+Jyoti+College+of+Management+and+Technology+Changanassery" target="_blank" rel="noopener">Open directions ↗</a>
+          </div>
+          <ul style="list-style:none;padding:0;margin:0;display:grid;gap:1rem">
+            <li style="display:flex;gap:.8rem;align-items:center"><span data-icon="mail" style="width:32px;color:var(--pen)"></span><a href="mailto:info@inovuslabs.org">info@inovuslabs.org</a></li>
+            <li style="display:flex;gap:.8rem;align-items:center"><span data-icon="phone" style="width:32px;color:var(--pen)"></span><a href="tel:+919400057152">+91 94000 57152</a></li>
+            <li style="display:flex;gap:.8rem;align-items:center"><span data-icon="pin" style="width:32px;color:var(--pen)"></span><span>Visits by arrangement</span></li>
+          </ul>
+          <p class="hand hand-md" style="transform:rotate(-3deg)">we usually reply<br>within a few days :)</p>
+        </aside>
+      </div>
+    </section>
+    <style>@media (max-width: 820px) { #contact-grid { grid-template-columns: 1fr !important; } }</style>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEDC Guidelines · Inovus Labs IEDC</title>
+  <meta name="description" content="How Inovus Labs IEDC works together: principles and role responsibilities.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="guidelines">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2.5rem">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div>
+          <span class="eyebrow">The handbook</span>
+          <h1>How we work <span class="mark">together.</span></h1>
+          <p class="lede">The roles that keep Inovus running, and what each one owns.</p>
+        </div>
+        <label class="search" style="align-self:end"><span class="sr-only">Search roles</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="M31 31l11 11"/></svg><input id="role-q" type="search" placeholder="Search roles…"></label>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap reading">
+        <aside class="rail"><p>Roles</p><ol id="rail-list"></ol></aside>
+        <div class="prose" style="max-width:none">
+          <div class="grid g-3" style="margin-bottom:3rem">
+            <div class="sticky" style="--r:-1deg"><span class="card-title">Be open</span><p class="mt-2">Decisions are made together, not top-down.</p></div>
+            <div class="sticky pink" style="--r:.8deg"><span class="card-title">Be fair</span><p class="mt-2">Raise problems early with the Nodal Officer.</p></div>
+            <div class="sticky" style="--r:-.4deg;background-color:#dfe6ef"><span class="card-title">Give back</span><p class="mt-2">Alumni stay welcome as mentors.</p></div>
+          </div>
+          <div class="notice" style="margin-bottom:2rem"><span>✎</span><span><b>Historic role framework.</b> These are the roles as written in our handbook. Current team titles (Student Lead, Technical Lead…) are being mapped to them.</span></div>
+          <div class="section-head" style="margin-bottom:1rem"><h2 style="font-size:1.8rem">Roles &amp; responsibilities</h2><button class="btn btn-ink btn-sm" id="expand">Expand all</button></div>
+          <div class="acc" id="roles"></div>
+          <div class="empty" id="role-empty" hidden><div class="sticky"><span class="card-title">No matching role</span><p class="mt-2">Try another word.</p></div></div>
+          <div class="split mt-7">
+            <p class="muted" style="font-size:.9rem">The full handbook isn’t available to download yet. Review date pending.</p>
+            <a class="btn btn-ink" href="contact.html?topic=General">Request the handbook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

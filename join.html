@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join · Inovus Labs IEDC</title>
+  <meta name="description" content="Students, mentors and partners: find your way into Inovus Labs.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="join">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Students, alumni &amp; collaborators welcome</span>
+          <h1>Bring your <span class="mark">curiosity.</span></h1>
+          <p class="lede">No experience needed. Just show up and start making.</p>
+        </div>
+        <ul class="checklist hand hide-md" style="font-size:2rem;display:grid;gap:.4rem;transform:rotate(-3deg);justify-self:center">
+          <li class="on">curious?</li><li class="on">like making things?</li><li>you’re in.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sheet section">
+      <div class="wrap">
+        <p class="hand hand-lg" style="margin-bottom:2rem">Pick your path ↓</p>
+        <div class="grid g-3">
+          <article class="path tape">
+            <span data-icon="bulb" style="width:54px;color:var(--pen)"></span>
+            <h3>Student</h3>
+            <ul class="checklist"><li class="on">Pick what excites you</li><li class="on">Say hi to the team</li><li>Come to a session</li></ul>
+            <a class="btn btn-stamp btn-sm" href="contact.html?topic=General">Introduce yourself <span class="arr">→</span></a>
+          </article>
+          <article class="path tape t-pink">
+            <span data-icon="mentor" style="width:54px;color:var(--pen)"></span>
+            <h3>Mentor or alumnus</h3>
+            <ul class="checklist"><li class="on">Run a session</li><li class="on">Review a build</li><li>Guide a team</li></ul>
+            <a class="btn btn-ink btn-sm" href="contact.html?topic=Mentoring">Offer to mentor <span class="arr">→</span></a>
+          </article>
+          <article class="path tape t-green">
+            <span data-icon="handshake" style="width:54px;color:var(--pen)"></span>
+            <h3>Partner</h3>
+            <ul class="checklist"><li class="on">Host a workshop</li><li class="on">Sponsor a hackathon</li><li>Offer internships</li></ul>
+            <a class="btn btn-ink btn-sm" href="contact.html?topic=Partnership">Start a conversation <span class="arr">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split" style="align-items:start">
+        <div><span class="eyebrow">Good questions</span><h2 class="mt-4">Before you <span class="mark">jump in.</span></h2>
+          <a class="btn btn-ink mt-6" href="https://www.whatsapp.com/channel/0029VaC8Xz27oQhXmjqNUV3T" target="_blank" rel="noopener">Follow on WhatsApp ↗</a></div>
+        <div class="faq">
+          <details><summary>Do I need experience?</summary><p>No. Most of us started with zero. You learn by building alongside others.</p></details>
+          <details><summary>Who can join?</summary><p>Inovus is run by and for KJCMT students. Students from other colleges can join outreach sessions and events.</p></details>
+          <details><summary>How much time does it take?</summary><p>As much as you can give. Sessions, workshops and build nights happen through the year.</p></details>
+          <details><summary>What happens after I reach out?</summary><p>A coordinator will get back to you about upcoming sessions and how to get involved.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

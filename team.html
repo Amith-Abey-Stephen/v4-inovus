@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People · Inovus Labs IEDC</title>
+  <meta name="description" content="The students, faculty and mentors behind Inovus Labs IEDC.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="team">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Meaningful people. Real impact.</span>
+          <h1>The <span class="mark">people</span> behind the possibilities.</h1>
+          <div class="hero-actions">
+            <a class="btn btn-ink btn-sm" href="#current">Current team</a>
+            <a class="btn btn-ink btn-sm" href="#mentors">Mentors</a>
+          </div>
+        </div>
+        <figure class="polaroid tape" style="--r:2deg;margin:0">
+          <img src="https://cdn.inovuslabs.org/assets/activity/5year.png" alt="Inovus Labs community celebrating five years">
+          <figcaption>ideas grow better together</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sheet section" id="current">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">Our current chapter</span><h2 id="gen-title">2026 · 9th generation</h2></div>
+          <label><span class="sr-only">Generation</span>
+            <select class="select" id="year">
+              <option value="2026">2026 · 9th gen</option>
+              <option value="2025">2025 · 8th gen</option>
+              <option value="2024">2024 · 7th gen</option>
+              <option value="2023">2023 · 6th gen</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid g-4 people" id="team-grid"></div>
+        <div class="empty" id="archive-empty" hidden>
+          <div class="sticky"><span class="card-title">Archive being updated</span><p class="mt-2">Have photos or names from this year? <a href="contact.html?topic=General">Tell us</a>.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mentors">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">Our mentors</span><h2>Guidance that builds <span class="mark">generations.</span></h2></div>
+          <p class="hand hand-md" style="transform:rotate(-4deg)">mentors turn potential<br>into progress</p>
+        </div>
+        <ul class="mentor-list reveal" id="mentor-list"></ul>
+      </div>
+    </section>
+
+    <section class="sheet sheet-blue">
+      <div class="wrap cta">
+        <div class="cta-art"><span class="doodle" style="width:64px;flex-shrink:0" data-icon="mega"></span><h2>Guide the next generation.</h2></div>
+        <a class="btn btn-stamp" href="contact.html?topic=Mentoring">Become a mentor <span class="arr">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Authors & Topics · Inovus Labs IEDC</title>
+  <meta name="description" content="Browse the Inovus Labs Lab Log by author or by topic.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="directory">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <div id="dir-view">
+      <section class="page-hero" style="padding-bottom:2.5rem">
+        <div class="wrap" style="grid-template-columns:1fr auto">
+          <div>
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="blog.html">Lab Log</a><span>/</span><span>Authors &amp; topics</span></nav>
+            <h1>Find a voice. Follow a <span class="mark">curiosity.</span></h1>
+            <div class="hero-actions">
+              <div class="tabs" role="tablist" aria-label="Browse by">
+                <button class="chip" role="tab" data-dtab="authors" aria-selected="true">Authors</button>
+                <button class="chip" role="tab" data-dtab="topics" aria-selected="false">Topics</button>
+              </div>
+            </div>
+          </div>
+          <label class="search" style="align-self:end"><span class="sr-only">Filter</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="M31 31l11 11"/></svg><input id="dq" type="search" placeholder="Filter names or topics…"></label>
+        </div>
+      </section>
+      <section class="sheet section">
+        <div class="wrap">
+          <div id="authors-panel"><div class="dir-grid" id="author-grid"></div></div>
+          <div id="topics-panel" hidden><ul class="topic-index" id="topic-list"></ul></div>
+          <div class="empty" id="dempty" hidden><div class="sticky"><span class="card-title">No match</span><p class="mt-2">Try a different name or topic.</p></div></div>
+        </div>
+      </section>
+    </div>
+    <div id="archive" hidden>
+      <section class="page-hero" style="padding-bottom:2.5rem">
+        <div class="wrap" style="grid-template-columns:1fr auto">
+          <div>
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="blog.html">Lab Log</a><span>/</span><a href="blog-directory.html">Authors &amp; topics</a></nav>
+            <span class="eyebrow mt-6" id="ar-kind"></span>
+            <h1 id="ar-title" class="mt-4"></h1>
+          </div>
+          <a class="btn btn-ink" id="ar-full" href="https://blog.inovuslabs.org" target="_blank" rel="noopener">Full archive ↗</a>
+        </div>
+      </section>
+      <section class="sheet section">
+        <div class="wrap">
+          <p class="hand hand-md" style="margin-bottom:2rem">recent stories ↓</p>
+          <div class="grid g-3" id="ar-list"></div>
+          <div class="empty" id="ar-empty" hidden><div class="sticky"><span class="card-title">Nothing recent</span><p class="mt-2">Older stories live in the full archive on the Lab Log.</p></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

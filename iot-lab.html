@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini IoT Lab · Inovus Labs IEDC</title>
+  <meta name="description" content="The Inovus Mini IoT Lab at KJCMT: microcontrollers, sensors and tools for student experiments.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="iotlab">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Boards · sensors · solder</span>
+          <h1>A small lab for big <span class="mark">experiments.</span></h1>
+          <p class="lede">Prototype IoT ideas without buying the hardware first.</p>
+          <div class="hero-actions">
+            <a class="btn btn-stamp" href="contact.html?topic=Lab%20visit">Plan a visit <span class="arr">→</span></a>
+            <a class="btn btn-ink" href="nanodegree-iot-arduino.html">Arduino syllabus</a>
+          </div>
+        </div>
+        <figure class="polaroid tape" style="--r:2deg;margin:0">
+          <img src="https://cdn.inovuslabs.org/assets/iotGallery/01.jpg" alt="The Mini IoT Lab workbench">
+          <figcaption>the workbench ✦ KJCMT</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="eyebrow">What you can explore</span><h2>Pick a corner.</h2></div></div>
+        <div class="ways reveal">
+          <div class="way"><span data-icon="chip" style="width:52px;color:var(--pen);display:block;margin-bottom:1rem"></span><h3>Microcontrollers</h3><p>Arduino, ESP32, Raspberry Pi.</p></div>
+          <div class="way"><span data-icon="search" style="width:52px;color:var(--pen);display:block;margin-bottom:1rem"></span><h3>Sensors</h3><p>Distance, motion, gas, light.</p></div>
+          <div class="way"><span data-icon="gear" style="width:52px;color:var(--pen);display:block;margin-bottom:1rem"></span><h3>Robotics</h3><p>Motors, servos, wheels.</p></div>
+          <div class="way"><span data-icon="bulb" style="width:52px;color:var(--pen);display:block;margin-bottom:1rem"></span><h3>Automation</h3><p>Relays, displays, the cloud.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="toolbar">
+      <div class="wrap">
+        <label class="search"><span class="sr-only">Search components</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="M31 31l11 11"/></svg><input id="q" type="search" placeholder="Search components…"></label>
+        <label><span class="sr-only">Category</span><select class="select" id="ccat"><option>All</option><option>Boards</option><option>Sensors</option><option>Actuators</option></select></label>
+        <span class="result-count">what’s on the shelf</span>
+      </div>
+    </div>
+    <section class="section">
+      <div class="wrap">
+        <div class="notice" style="margin-bottom:2rem"><span>✎</span><span><b>Illustrative inventory.</b> Stock changes, so confirm what’s available with the lab team before you plan a build.</span></div>
+        <div class="grid g-4" id="comps"></div>
+        <div class="empty" id="cempty" hidden><div class="sticky"><span class="card-title">Not on our list</span><p class="mt-2">We might still have it. <a href="contact.html?topic=Lab%20visit">Ask the lab team</a>.</p></div></div>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="eyebrow">Getting started</span><h2>Three steps to your first build.</h2></div></div>
+        <ol class="steps reveal">
+          <li><h3>Choose a project</h3><p>Start small: a blinking LED counts.</p></li>
+          <li><h3>Ask a mentor</h3><p>Someone’s probably built it before.</p></li>
+          <li><h3>Test safely</h3><p>Low voltage first. Check before you plug in.</p></li>
+        </ol>
+        <div class="grid g-4 mt-7 reveal" id="labshots"></div>
+      </div>
+    </section>
+    <section class="section-tight">
+      <div class="wrap cta"><h2>Visits by arrangement.</h2><a class="btn btn-stamp" href="contact.html?topic=Lab%20visit">Plan a visit <span class="arr">→</span></a></div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

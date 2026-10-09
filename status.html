@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Status · Inovus Labs IEDC</title>
+  <meta name="description" content="Status of Inovus Labs services. Live data is published on status.inovuslabs.org.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="status">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2rem">
+      <div class="wrap" style="grid-template-columns:1fr auto">
+        <div><span class="eyebrow">Service health</span><h1>Is everything <span class="mark">up?</span></h1></div>
+        <a class="btn btn-stamp" href="https://status.inovuslabs.org" target="_blank" rel="noopener">Live status ↗</a>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap">
+        <div class="notice" style="margin-bottom:2rem"><span>ⓘ</span><span>Live health checks run on <a href="https://status.inovuslabs.org" target="_blank" rel="noopener">status.inovuslabs.org</a>. This page lists our services but can’t see their current state, so each one shows <b>Unknown</b>.</span></div>
+        <div style="border-top:1.5px solid var(--ink)" id="svcs">
+          <div class="svc"><b>Website</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>Lab Log (blog)</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>AMA</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>Chacko Mash bot</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>Kiosk</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>IRC</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>Certificate</b><span class="state">Unknown</span></div>
+          <div class="svc"><b>SyncBatch</b><span class="state">Unknown</span></div>
+        </div>
+        <div class="split mt-7">
+          <div><span class="eyebrow">Maintenance</span><p class="mt-4" style="color:var(--ink-2)">Scheduled maintenance is announced on the live status page.</p></div>
+          <p class="hand hand-md" style="transform:rotate(-2deg)">something broken? <a href="contact.html?topic=General" style="color:inherit">tell us →</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

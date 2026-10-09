@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Builds · Inovus Labs IEDC</title>
+  <meta name="description" content="Student-made hardware, software and open-source projects from Inovus Labs.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Sketch → build → real</span>
+          <h1>Made by curious <span class="mark">minds.</span></h1>
+          <p class="lede">Robots, IoT gadgets, an electric buggy, bots and open-source tools, built by students.</p>
+        </div>
+        <figure class="polaroid tape t-pink" style="--r:-2deg;margin:0">
+          <img src="https://cdn.inovuslabs.org/assets/projects/Atom.jpg" alt="Atom EV, the student-built electric buggy">
+          <figcaption>Atom EV · our flagship build</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="toolbar">
+      <div class="wrap">
+        <label class="search"><span class="sr-only">Search builds</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="M31 31l11 11"/></svg><input id="q" type="search" placeholder="Search builds…"></label>
+        <div id="cats" style="display:flex;gap:.4rem;flex-wrap:wrap" role="group" aria-label="Category"></div>
+        <label><span class="sr-only">Status</span><select class="select" id="status"><option value="all">Any status</option><option>Completed</option><option>In progress</option></select></label>
+        <span class="result-count" id="count" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="grid g-3" id="builds"></div>
+        <div class="empty" id="empty" hidden>
+          <div class="sticky"><span class="card-title">Nothing here… yet.</span><p class="mt-2">No builds match. Maybe you’ll build the first one.</p><button class="btn btn-ink btn-sm mt-4" id="reset">Clear filters</button></div>
+        </div>
+        <p class="muted center mt-7" style="font-size:.85rem">Statuses come from project teams and may be out of date.</p>
+      </div>
+    </section>
+
+    <section class="sheet sheet-yellow">
+      <div class="wrap cta">
+        <div class="cta-art"><span class="doodle" style="width:64px;flex-shrink:0" data-icon="gear"></span><h2>Have a build in mind?</h2></div>
+        <a class="btn btn-stamp" href="join.html">Build with us <span class="arr">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build · Inovus Labs IEDC</title>
+  <meta name="description" content="Project details from Inovus Labs IEDC.">
+  <link rel="icon" href="https://inovuslabs.org/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="project">
+  <a class="skip" href="#main">Skip to content</a>
+  <header data-header></header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2rem">
+      <div class="wrap" style="grid-template-columns:1fr">
+        <div>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="projects.html">Builds</a><span>/</span><span id="crumb"></span></nav>
+          <h1 id="title" style="font-size:clamp(2.2rem,5vw,4rem)"></h1>
+          <div class="hero-actions" id="status" style="margin-top:1.2rem"></div>
+        </div>
+      </div>
+    </section>
+    <section class="sheet section">
+      <div class="wrap" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(2rem,5vw,4rem);align-items:start" id="pr-grid">
+        <div>
+          <figure class="polaroid tape t-yellow" id="shot" style="--r:-.8deg;margin:0 0 2.5rem;max-width:720px"></figure>
+          <span class="eyebrow">About the build</span>
+          <div class="prose mt-4" id="desc"></div>
+          <div class="notice mt-6"><span>⚠</span><span>Published source code doesn’t mean a build is electrically safety-certified. Ask a mentor before wiring anything to mains power.</span></div>
+        </div>
+        <dl class="meta-rail" id="meta" style="margin:0"></dl>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow">Related</span><h2>Keep exploring.</h2></div><a class="link" href="projects.html">← All builds</a></div>
+        <div class="grid g-3" id="related"></div>
+      </div>
+    </section>
+    <style>@media (max-width: 860px) { #pr-grid { grid-template-columns: 1fr !important; } }</style>
+  </main>
+
+  <footer data-footer></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/pages.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = window.INO_ICONS[el.dataset.icon]);</script>
+</body>
+</html>
